@@ -1,0 +1,81 @@
+@import url('css_base.css');
+
+
+.quem-somos {
+    padding: var(--espaco-grande);
+    background-color: var(--cor-fundo);
+    border-radius: var(--raio-borda);
+    margin: var(--espaco-grande) auto;
+    max-width: 900px;
+}
+
+.quem-somos h2 {
+    text-align: center;
+    color: var(--cor-primaria);
+    margin-bottom: var(--espaco-medio);
+}
+
+.quem-somos p {
+    color: var(--cor-texto);
+    font-size: 1.2rem;
+    margin-bottom: var(--espaco-medio);
+    line-height: var(--altura-linha-base);
+    text-align: justify;
+}
+
+/* Seção Nossa Equipe */
+.nossa-equipe {
+    padding: var(--espaco-grande);
+    background-color: var(--cor-fundo);
+    border-radius: var(--raio-borda);
+    margin: var(--espaco-grande) auto;
+    max-width: 900px;
+}
+
+.nossa-equipe h2 {
+    text-align: center;
+    color: var(--cor-primaria);
+    margin-bottom: var(--espaco-medio);
+}
+
+.equipe-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.membro-equipe {
+    text-align: center;
+    margin-bottom: var(--espaco-grande);
+}
+
+.equipe-imagem {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: var(--espaco-pequeno);
+    object-fit: cover;
+}
+
+.membro-equipe h3 {
+    color: var(--cor-primaria);
+    margin-bottom: var(--espaco-pequeno);
+}
+
+.membro-equipe p {
+    color: var(--cor-texto);
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .equipe-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quem-somos, .nossa-equipe {
+        padding: var(--espaco-medio);
+        margin: var(--espaco-medio);
+    }
+}

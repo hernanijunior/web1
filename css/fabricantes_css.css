@@ -1,0 +1,24 @@
+
+@import url('css_base.css');
+
+.fabricantes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: var(--spacing-medium);
+}
+
+.fabricante {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: var(--spacing-medium);
+    text-align: center;
+    width: 300px;
+}
+
+.fabricante-foto {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: var(--spacing-medium);
+}
